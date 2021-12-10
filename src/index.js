@@ -10,7 +10,7 @@ worker.start();
 const rootElement = document.getElementById("root");
 
 ReactDOM.render(
-    <App />, 
+        <App />, 
     rootElement
 );
 
