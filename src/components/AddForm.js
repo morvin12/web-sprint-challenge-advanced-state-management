@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { addSmurf, setError } from '../actions';
 
 const initialFormValues = {
+    id:"",
     name:"",
     position:"",
     nickname:"",
