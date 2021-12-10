@@ -3,6 +3,7 @@ import axios from 'axios';
 export const FETCH_START = 'FETCH_START';
 export const FETCH_SUCCESS = 'FETCH_SUCCESS';
 export const FETCH_ERROR = 'FETCH_ERROR';
+export const SET_ERROR = 'SET_ERROR';
 
 export const fetchSmurfs = () => {
     return (dispatch) => {
@@ -31,13 +32,16 @@ export const addSmurf = (smurf) => {
 }
 
 const fetchStart = () => {
-    return({type: FETCH_START})
+    return ({type: FETCH_START})
 }
 const fetchSuccess = (smurfs) => {
     return ({type: FETCH_SUCCESS, payload: smurfs})
 }
 const fetchError = (err) => {
     return ({type: FETCH_ERROR, payload: err})
+}
+export const setError = (err) => {
+    return ({type: SET_ERROR, payload: err})
 }
 
 //Task List:
