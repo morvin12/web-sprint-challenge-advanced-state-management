@@ -1,12 +1,12 @@
 
 export const initialState = {
-    smurfs: []
+    smurfs: [],
     isLoading: false,
     error: ''
 }
 
 const reducer = (state = initialState, action) => {
-    switch(action,type){
+    switch(action.type){
         default:
             return state
     }
